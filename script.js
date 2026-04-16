@@ -185,6 +185,13 @@ const fruits = ["eple", "pære", "appelsin", "dragefrukt", "mango"];
 console.log(fruits)
 console.log(fruits.length)
 
+fruits.pop();
+console.log(fruits);
+
+fruits.push("banan")
+
+console.log(fruits)
+
 // Array med Objects
 const brukere = [
   { name: "Sam", age: 38,},
