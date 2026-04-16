@@ -128,6 +128,15 @@ console.log(cars.length)
 
 // Objects
 
+const pet = {
+  name: "klypa", species: "Dog", isVacinated: true, breed: "Malamu", isFixed: false,
+}
+
+pet.isFixed = true; 
+
+console.log(pet);
+console.log(pet.name);
+
 const person = {
   name: "Ola",
   age: 30,
@@ -169,3 +178,19 @@ const org = {
 
 
 console.log(org)
+
+// basic array
+const fruits = ["eple", "pære", "appelsin", "dragefrukt", "mango"];
+
+console.log(fruits)
+console.log(fruits.length)
+
+const brukere = [
+  { name: "Sam",
+age: 38,},
+
+{name: "jon",
+age: 42},
+
+{name: "jessica", age: 22},
+]
