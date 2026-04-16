@@ -278,7 +278,7 @@ const skoler = [ {
   {Name: "Severus Snape", classes:"Potions and stuff"},
   {Name: "Pomona Sprout", classes: "Herbology"},
   {Name: "Filius Flitwick", classes: "Charms"},
-]},
+],},
 
 {
   name:"Ravenclaw",
