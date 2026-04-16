@@ -265,3 +265,28 @@ const student = {
 
 console.log(student)
 
+const skoler = [ {
+  name:"Gryffindor",
+  antallStudenter: 22,
+  harSvømmebasseng: false,} ,
+
+{
+  name:"Hufflepuff",
+  antallStudenter: 33,
+  harSvømmebasseng: false,
+  Lærere: [
+  {Name: "Severus Snape", classes:"Potions and stuff"},
+  {Name: "Pomona Sprout", classes: "Herbology"},
+  {Name: "Filius Flitwick", classes: "Charms"},
+]},
+
+{
+  name:"Ravenclaw",
+  antallStudenter: 44,
+  harSvømmebasseng: false},
+
+]
+
+console.log(skoler)
+
+// OBject = {} Array =[]
