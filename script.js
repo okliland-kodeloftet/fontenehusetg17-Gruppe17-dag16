@@ -127,3 +127,45 @@ console.log(cars.length)
 
 
 // Objects
+
+const person = {
+  name: "Ola",
+  age: 30,
+  isStudent: false
+}
+
+console.log(person.name);
+console.log(person);
+
+const org = {
+  name: "Fritidsklubben",
+  totalMembers: 318,
+  activities: ["Fotball", "Volleyball", "Cricket", "Frisbee", "Golf", "Svømming", "Gaming"],
+ 
+  members: [
+  {
+    name: "Kristine",
+    age: 19,
+    paidFee: true,
+    activities: ["Gaming"],
+  },
+
+  {
+  name: "Ole",
+  age:23,
+  paidFee: true,
+  activities:["Frisbee", "Golf"],
+  },
+
+  {
+  name:"Nils",
+  age: 22,
+  paidFee: true,
+  activities:["Fotball", "volleyball"],
+  }
+
+]}
+
+
+
+console.log(org)
