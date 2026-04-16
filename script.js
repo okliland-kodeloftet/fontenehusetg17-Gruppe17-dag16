@@ -185,12 +185,27 @@ const fruits = ["eple", "pære", "appelsin", "dragefrukt", "mango"];
 console.log(fruits)
 console.log(fruits.length)
 
+// Array med Objects
 const brukere = [
-  { name: "Sam",
-age: 38,},
+  { name: "Sam", age: 38,},
 
-{name: "jon",
-age: 42},
+{name: "jon", age: 42},
 
 {name: "jessica", age: 22},
 ]
+
+console.log(brukere)
+
+console.log(brukere[0])
+
+
+// Object med array
+
+const newPerson = {
+  name: "Dina",
+  hobbies: ["Strikking", "Lesing", "Matlaging", "Sykling"]
+}
+
+console.log(newPerson);
+console.log(newPerson.hobbies);
+console.log(newPerson.hobbies[3]);
