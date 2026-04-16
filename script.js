@@ -290,3 +290,4 @@ const skoler = [ {
 console.log(skoler)
 
 // OBject = {} Array =[]
+
