@@ -188,7 +188,7 @@ console.log(fruits.length)
 fruits.pop();
 console.log(fruits);
 
-fruits.push("banan")
+fruits.push("banan", "grapefrukt")
 
 console.log(fruits)
 
@@ -216,3 +216,52 @@ const newPerson = {
 console.log(newPerson);
 console.log(newPerson.hobbies);
 console.log(newPerson.hobbies[3]);
+
+
+
+// Oppgave 
+
+const matretter = ["Pizza", "Hamburger", "Pasta", "Hummer",  "Kanari" ]
+matretter.pop()
+matretter.push("Salat")
+
+console.log(matretter)
+
+const bok = {
+  tittel: "Det er boka mi", forfatter: "Nils Nilsen", sider: 123, sjangre: ["SciFi", "Fantasy", "Drama", "Horror", "Komedie"],
+}
+
+console.log(bok)
+
+const pets = [
+  {
+    name: "Snowball",
+    age: 4,
+    species: "Katt",
+    isFixed: false,
+  },
+  {
+    name: "Snowball 2",
+    age: 3,
+    species: "Katt",
+    isFixed: true,
+  },
+  {
+    name: "Santas little Helper",
+    age: 3,
+    species: "Hund",
+    isFixed: true,
+  }
+
+]
+
+console.log(pets)
+
+const student = {
+  navn: "Harry Potter",
+  klasse: "Gryffindor",
+  classes: ["Trolldom", "Wizzarding", "Sånn greie der de kjører kosteskaft og henter en ting", "Matte", "Spells"]
+};
+
+console.log(student)
+
