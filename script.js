@@ -340,3 +340,28 @@ while(i < 5) {
   i++;
 }
 
+// continue in while loop
+
+console.log("Continue in while loop")
+
+let y = 0; 
+
+while(y < 5){
+  y++
+  if (y === 3) {
+    continue
+  }
+  console.log(y)
+  
+}
+
+// do WHILe(kjører minst en gang, men kan gå flere ganger)
+
+console.log("Do while loop")
+
+let x = 10;
+
+do{
+  console.log(x);
+}
+while ( x < 5);
