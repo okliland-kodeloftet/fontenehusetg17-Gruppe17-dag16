@@ -299,9 +299,12 @@ console.log(skoler)
 
 // FOR loop (for()3 Expressions(1.let i(iterasjon som blir oppdatert) 2.condition)) deretter { hva som skal skje}
 // Standard loop
-for (let i =0; i < 5; i++) {
+for (let i = 0; i < 5; i++) {
   console.log(i)
 }
+
+
+
 
 console.log("neste eksempel Break loop")
 
@@ -387,6 +390,8 @@ frukter.forEach(function(frukt){
   console.log(frukt);
 });
 
+
+
 // Mini Oppgave Continue hopper over denne iterasjonen, mens BREAK avslutter hele loopen(inkludert det tallet som den står på)
 
 for(let i = 1; i <= 10; i++) {
@@ -398,3 +403,63 @@ for(let i = 1; i <= 10; i++) {
   }
   console.log(i);
 }
+
+
+
+
+// Oppgaver
+
+// Oppgave 1: Oppgave 1: Lag en For-loop som teller fra 1 til 5 (MERK: Ikke 0)
+
+console.log("OPPGAVER:")
+
+console.log("Oppgave1:")
+
+for (let o = 1; o < 6; o++) {
+  console.log(o)
+}
+
+// Oppgave 2: Oppgave 2: Lag en For-loop som teller baklengs fra 5 til 1
+
+console.log("Oppgave 2:")
+
+for(let o = 5; o > 0 ; o--) {
+  console.log(o)
+}
+
+// Oppgave 3: Lag en While-loop som har condition å telle fra 2 til 8, men hopper over 3 og 6. (Continue)
+
+console.log("Oppgave 3:")
+
+
+
+for(let o = 2; o <= 8; o++) {
+  if( o===3){
+    continue;
+  }
+  if(o===6){
+    continue;
+  }
+  console.log(o);
+}
+
+// Oppgave 4: Lag en Do-While Loop som har condition å telle fra 0 til 10, men avsluttes på 4. (Break)
+
+console.log("Oppgave 4:")
+
+for(let o = 0; o < 10; o++) {
+  if(o === 5){
+    break;
+  }
+  console.log(o);
+}
+
+// Oppgave 5: Lag en liste med 5 navn. Ved bruk av forEach, log ut hvert navn i konsollen, men med teksten "Navn: " foran. Så det skal for eksempel se slikt ut i konsollen: "Navn: Jonas".
+
+console.log("Oppgave 5")
+
+const navner = ["Jonas", "Nils" ,"Narve","Nomrik","Nasse"];
+
+navner.forEach (function(navn){
+  console.log("NAVN: " + navn)
+})
