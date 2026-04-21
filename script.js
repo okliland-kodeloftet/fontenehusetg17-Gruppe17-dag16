@@ -463,3 +463,27 @@ const navner = ["Jonas", "Nils" ,"Narve","Nomrik","Nasse"];
 navner.forEach (function(navn){
   console.log("NAVN: " + navn)
 })
+
+// Bonusoppgaver
+
+// Oppgave 6: Bruk en For-loop til å skrive ut alle partall fra 0 til 20.
+// +=2 gjør at den hopper to tall for hver gang, noe som gjør at den kun kjører partall, men strengt tatt ikke vet selv at det faktisk kun er partall den kjører
+
+for (let i = 0; i <= 20; i += 2) {
+	console.log(i);
+}
+
+// Oppgave 7: Lag en loop som regner summen av tallene fra 1 til 8
+// Startsummen er 0, deretter blir variabelen(o)
+
+console.log("Oppgave: 7")
+
+let sum = 0;
+for (let o = 1; o <= 8; o++) {
+	sum += o;
+}
+
+console.log(sum);
+
+
+
