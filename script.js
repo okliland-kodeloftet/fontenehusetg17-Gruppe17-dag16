@@ -291,3 +291,52 @@ console.log(skoler)
 
 // OBject = {} Array =[]
 
+
+
+
+// Undervisning 18: Javascript LOOPS
+
+
+// FOR loop (for()3 Expressions(1.let i(iterasjon som blir oppdatert) 2.condition)) deretter { hva som skal skje}
+// Standard loop
+for (let i =0; i < 5; i++) {
+  console.log(i)
+}
+
+console.log("neste eksempel Break loop")
+
+// Break-loop eksempel
+
+for(let i = 0; i < 10; i++) {
+  if(i === 5) {
+    break
+  }
+  else{
+    console.log(i);
+  }
+
+}
+
+// Continue loop
+
+console.log("Continue loop")
+
+for(let i = 0; i < 5; i++) {
+  if (i === 2) {
+    continue;
+  }
+  // else {"(} erlenger nede"
+    console.log(i)
+}
+
+// While loop eksempel
+
+console.log("Neste eksempel: While loop")
+
+let i = 0;
+
+while(i < 5) {
+  console.log(i);
+  i++;
+}
+
