@@ -365,3 +365,36 @@ do{
   console.log(x);
 }
 while ( x < 5);
+
+
+// loop gjennom array
+
+console.log("ForEach eksempel");
+
+const frukter = ["eple", "banan", "pære", "appelsin"];
+
+frukter.forEach(function(frukt){
+  console.log("FRUKTER: " + frukt);
+})
+
+// 
+console.log("Return eksempel med forEach:")
+
+frukter.forEach(function(frukt){
+  if(frukt === "banan"){
+    return;
+  }
+  console.log(frukt);
+});
+
+// Mini Oppgave Continue hopper over denne iterasjonen, mens BREAK avslutter hele loopen(inkludert det tallet som den står på)
+
+for(let i = 1; i <= 10; i++) {
+  if(i === 5){
+    continue;
+  }
+  else if (i === 8){
+    break;
+  }
+  console.log(i);
+}
