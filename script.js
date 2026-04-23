@@ -473,6 +473,9 @@ for (let i = 0; i <= 20; i += 2) {
 	console.log(i);
 }
 
+
+
+
 // Oppgave 7: Lag en loop som regner summen av tallene fra 1 til 8
 // Startsummen er 0, deretter blir variabelen(o)
 
@@ -486,4 +489,106 @@ for (let o = 1; o <= 8; o++) {
 console.log(sum);
 
 
+// Oppgave 8: Bruk en loop inni en annen loop til å skrive ut dette i konsollen: 1-1 1-2 2-1 2-2 3-1 3-2
 
+
+// Vise Arrays på nettsiden
+
+const biler = ["BMW", "volvo", "bughatti"];
+
+console.log(biler[0])
+
+const paragraph = document.createElement("p")
+
+paragraph.textContent = biler[0];
+
+const body2 = document.querySelector("#biler")
+
+body2.appendChild(paragraph)
+
+
+const alleBiler = ["BMW", "volvo", "bughatti"];
+const body3 = document.querySelector("#biler");
+
+alleBiler.forEach(function(biler){
+  const p = document.createElement("p");
+  p.textContent = biler;
+  body3.appendChild(paragraph);
+});
+
+
+
+// Oppgave 1 Ved bruk av denne arrayen: const numbers = [1, 2, 3, 4, 5, 6]; Skriv ut kun partall i fra den
+
+// console.log("oppgave 1 Undervisning 19")
+
+const numbers = [1, 2, 3, 4, 5, 6];
+
+// for (let q = 0; q < numbers.length; q++) {
+//   if(numbers[q] % 2 === 0){
+//     console.log(numbers[q])
+//   }
+// }
+
+console.log("Oppgave 2")
+
+let largest = numbers[0]
+
+for(let q = 1; q < numbers.length; q++)
+{
+  if (numbers[q] > largest){
+    largest = numbers[q];
+  }
+}
+
+console.log(largest);
+
+
+const names2 = ["Ola", "Kari", "Ola", "Per"];
+
+let count = 0;
+
+for(let q = 0; q < names2.length; q++){
+  if (names2[q] === "Ola"){
+    count++;
+  }
+}
+
+console.log("Antall ganger Ola forekommer: " + count)
+
+console.log("demonstrasjon av MAP")
+
+// Array MAP
+
+const doubled = numbers.map(function(num)
+{
+  return num *2
+}
+
+);
+console.log(numbers)
+console.log(doubled);
+
+
+// Oppgave 4
+// Ved bruk av dette arrayet:
+// const priser = [100, 200, 300]
+// Bruk .map() til å opprette et nytt array der alle prisene har inkluderer 25% moms
+
+const priser = [100, 200, 300];
+
+const nyePriser = priser.map(function(moms2)
+{
+  return moms2 * 1.25
+});
+
+console.log(nyePriser)
+
+
+//Oppgave 5
+// Du har følgende array:
+const navn = ["Ole", "Per", "Thomas", "Jens"];
+// Ved bruk av .includes() metoden, print ut i konsollen om navnet "Jens" forekommer, og i tilleg om "Henriette" forekommer i arrayet.
+
+console.log(navn.includes("Jens"))
+console.log(navn.includes("Henriette"))
