@@ -598,7 +598,7 @@ console.log("Oppgave 6");
 /* Bonus oppgave
 Opprett en liste "users" med tre objekter. Dem skal hver ha et navn og alder. Ved bruk av .map, returner en ny array som inkluderer kun navnene dems. */
 
-console.assert.og("bonus oppgave")
+console.log("bonus oppgave")
 
 const users = [
   {names: "nils", ages: 22},
@@ -608,11 +608,11 @@ const users = [
 
 
 
-const justNames = users.map(functions(user)
+const justNames = users.map(function(user)
 {
-  return users.justNames;
-}
-)
+  return users.names;
+});
+
 console.log(justNames)
 ;
 
