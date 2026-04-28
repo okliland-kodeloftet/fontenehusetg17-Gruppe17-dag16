@@ -610,10 +610,38 @@ const users = [
 
 const justNames = users.map(function(user)
 {
-  return users.names;
+  return user.names;
 });
 
 console.log(justNames)
 ;
 
 
+async function getData(){
+  const response = await fetch("https://api.nasa.gov/planetary/apod?api_key=YA3OSaCXxUC6bFarrSIaxLjEpufjc2cM3hdiNP87");
+  const data = await response.json();
+ console.log(data.url);
+
+  const image = document.getElementById("nasaBilde");
+
+  image.src = data.url;
+}
+getData();
+
+
+// const data = await response.json();
+
+//   // Lager img-element
+//   const image = document.createElement("img");
+
+//   // Setter bilde-url
+//   image.src = data.url;
+
+//   // Setter størrelse
+//   image.width = 500;
+
+//   // Legger bildet inn på nettsiden
+//   document.body.appendChild(image);
+// }
+
+// getData();
